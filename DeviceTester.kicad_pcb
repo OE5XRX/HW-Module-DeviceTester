@@ -521,7 +521,7 @@
 		(property ki_fp_filters "MountingHole*")
 		(path "/284d8254-f0ed-4637-8b96-4c3af8cec737")
 		(sheetname "/")
-		(sheetfile "main.kicad_sch")
+		(sheetfile "DeviceTester.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
@@ -1376,7 +1376,7 @@
 		(property ki_fp_filters "CP_*")
 		(path "/1a4e0843-dfd9-479d-befe-34f5f5efdb3d")
 		(sheetname "/")
-		(sheetfile "main.kicad_sch")
+		(sheetfile "DeviceTester.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -4.415 2.26)
@@ -1614,7 +1614,7 @@
 		(property ki_fp_filters "MountingHole*")
 		(path "/3a6609fa-a0ba-4149-b5b6-590a3714953d")
 		(sheetname "/")
-		(sheetfile "main.kicad_sch")
+		(sheetfile "DeviceTester.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
@@ -3987,7 +3987,7 @@
 		(property ki_fp_filters "MountingHole*")
 		(path "/512f17a9-76ee-4048-872c-dc439e5754ea")
 		(sheetname "/")
-		(sheetfile "main.kicad_sch")
+		(sheetfile "DeviceTester.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
@@ -4552,7 +4552,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/fc22e763-6137-43dd-b7b7-8f10bee195e1")
 		(sheetname "/")
-		(sheetfile "main.kicad_sch")
+		(sheetfile "DeviceTester.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.227064 0.735)
@@ -5254,7 +5254,7 @@
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/d1d14914-ec4c-4433-b5f5-5adc435bddac")
 		(sheetname "/")
-		(sheetfile "main.kicad_sch")
+		(sheetfile "DeviceTester.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -1.685 -0.96)
@@ -5732,7 +5732,7 @@
 		(property ki_fp_filters "TerminalBlock*:*")
 		(path "/b64dc940-1f01-41c3-85cd-6ec6dd9e8f86")
 		(sheetname "/")
-		(sheetfile "main.kicad_sch")
+		(sheetfile "DeviceTester.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 7.74 -5.32)
@@ -6783,7 +6783,7 @@
 		(property ki_fp_filters "MountingHole*")
 		(path "/2acc2d22-0f30-4586-a14b-b421faad7d65")
 		(sheetname "/")
-		(sheetfile "main.kicad_sch")
+		(sheetfile "DeviceTester.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
