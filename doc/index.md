@@ -21,7 +21,7 @@ Universelles Bring-up- und Test-Board für alle OE5XRX-Hardware-Module. Es hat z
 
 - **Device-Tester-Seite** (`J203`, männlicher PCN10-Stecker — wie ein BusBoard-Slot): Hier wird ein zu testendes Modul (PowerBoard, CM4Carrier, FM-Transceiver etc.) eingesteckt. Das Modul wird vom DeviceTester aus mit Strom versorgt — USB-C `J201` bringt +5V_A; Phoenix-Schraubterminal `J101` bringt +12V (für Module die echte +12V brauchen, z.B. FM-Modul mit SA818-TX-Spitzen).
 - **Bus-Tester-Seite** (`J302`, weibliche PCN10C-Buchse — wie ein Modul): Hier wird ein zu testendes BusBoard angesteckt. USB-C `J301` bringt +5V_B und kann über Jumper `J303` an die Bus-Tester-Seite durchgereicht werden, sodass das BusBoard ohne eigenes PowerBoard betrieben werden kann.
-- **CM4 flashen**: Über den 4-Pin Flash-Header `J202` werden die beiden Bus-Pins `nRPIBOOT` und `USB_OTG_ID` manuell per Jumper auf die richtigen Pegel gezogen — siehe [„CM4 flashen"](#cm4-flashen) unten.
+- **CM4 flashen**: Über den 4-Pin Flash-Header `J202` werden die beiden Bus-Pins `nRPIBOOT` und `USB_OTG_ID` manuell per Jumper auf die richtigen Pegel gezogen — siehe ["CM4 flashen"](#cm4-flashen) unten.
 
 Die zwei +5V-Rails (`+5V_A` Device-Seite, `+5V_B` Bus-Seite) sind elektrisch entkoppelt, damit kein Backfeed zwischen den Test-Kontexten passiert.
 
@@ -55,9 +55,9 @@ flowchart LR
 | **J101** | Phoenix MKDS-1,5-2 5.08 mm Schraubterminal (2-Pin) | +12V-Eingang. Nötig für Module die echte +12V brauchen (z.B. SA818-TX). |
 | **J201** | USB-C 2.0 (G-Switch GT-USB-7010ASV) | Device-Seite. +5V_A-Versorgung und USB-Datenanschluss für den DUT in `J203`. |
 | **J202** | 4-Pin Stiftleiste 2.54 mm | Flash-Header: GND / nRPIBOOT / USB_OTG_ID / +5V_A. Silkscreen-beschriftet. |
-| **J203** | Hirose **PCN10-20P-2.54DS** (männlich, 2×10) | „Device Tester Connector" — Slot in den der DUT eingesetzt wird. Pinbelegung entspricht der BusBoard-Slot-Seite. |
+| **J203** | Hirose **PCN10-20P-2.54DS** (männlich, 2×10) | "Device Tester Connector" — Slot in den der DUT eingesetzt wird. Pinbelegung entspricht der BusBoard-Slot-Seite. |
 | **J301** | USB-C 2.0 (G-Switch GT-USB-7010ASV) | Bus-Seite. +5V_B-Versorgung und USB-Datenanschluss für eine angeschlossene BusBoard. |
-| **J302** | Hirose **PCN10C-20S-2.54DS** (weiblich, 2×10) | „Bus Tester Connector" — Buchse die in einen BusBoard-Slot gesteckt wird. Pinbelegung wie ein normaler Modul-Stecker. |
+| **J302** | Hirose **PCN10C-20S-2.54DS** (weiblich, 2×10) | "Bus Tester Connector" — Buchse die in einen BusBoard-Slot gesteckt wird. Pinbelegung wie ein normaler Modul-Stecker. |
 | **J303** | 2-Pin Stiftleiste 2.54 mm | Jumper: schließt `+5V_B` auf die `+5V`-Pins von `J302`. Bei externer Bus-Versorgung **offen** lassen. |
 
 ## Versorgung (drei Rails)
@@ -107,7 +107,7 @@ Use Case: ein einzelnes Modul (z.B. FM-Transceiver oder PowerBoard) **ohne** vol
 
 ### 2. CM4 flashen (rpiboot)
 
-Siehe Sektion [„CM4 flashen"](#cm4-flashen) oben.
+Siehe Sektion ["CM4 flashen"](#cm4-flashen) oben.
 
 ### 3. BusBoard-Test ohne eigene Versorgung
 
