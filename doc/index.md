@@ -2,7 +2,7 @@
 title: Device Tester
 nav_order: 1
 parent: Hardware
-description: Bring-up und Test-Board für die OE5XRX-Hardware-Module — Standalone-Modul-Test, BusBoard-Test ohne eigene Versorgung, CM4-Flash via rpiboot.
+description: Bringup und Test-Board für die OE5XRX-Hardware-Module — Standalone-Modul-Test, BusBoard-Test ohne eigene Versorgung, CM4-Flash via rpiboot.
 ---
 
 # Device Tester PCB
@@ -17,7 +17,7 @@ description: Bring-up und Test-Board für die OE5XRX-Hardware-Module — Standal
 
 ## Übersicht
 
-Universelles Bring-up- und Test-Board für alle OE5XRX-Hardware-Module. Es hat zwei voneinander unabhängige Steckverbinder-Seiten und kombiniert sie mit USB-C-PC-Anschlüssen, einer +12V-Schraubterminal-Quelle und einem 4-Pin-Flash-Header für CM4-rpiboot:
+Universelles Bringup- und Test-Board für alle OE5XRX-Hardware-Module. Es hat zwei voneinander unabhängige Steckverbinder-Seiten und kombiniert sie mit USB-C-PC-Anschlüssen, einer +12V-Schraubterminal-Quelle und einem 4-Pin-Flash-Header für CM4-rpiboot:
 
 - **Device-Tester-Seite** (`J203`, männlicher PCN10-Stecker — wie ein BusBoard-Slot): Hier wird ein zu testendes Modul (PowerBoard, CM4Carrier, FM-Transceiver etc.) eingesteckt. Das Modul wird vom DeviceTester aus mit Strom versorgt — USB-C `J201` bringt +5V_A; Phoenix-Schraubterminal `J101` bringt +12V (für Module die echte +12V brauchen, z.B. FM-Modul mit SA818-TX-Spitzen).
 - **Bus-Tester-Seite** (`J302`, weibliche PCN10C-Buchse — wie ein Modul): Hier wird ein zu testendes BusBoard angesteckt. USB-C `J301` bringt +5V_B und kann über Jumper `J303` an die Bus-Tester-Seite durchgereicht werden, sodass das BusBoard ohne eigenes PowerBoard betrieben werden kann.
@@ -96,14 +96,14 @@ Ablauf:
 
 ## Test-Workflows
 
-### 1. DUT-Test (Standalone-Modul-Bring-up)
+### 1. DUT-Test (Standalone-Modul-Bringup)
 
 Use Case: ein einzelnes Modul (z.B. FM-Transceiver oder PowerBoard) **ohne** vollständige Remote-Station-Umgebung testen oder debuggen.
 
 1. Modul in `J203` (Device Tester Connector) einsetzen.
 2. +12V an `J101` anschließen falls das Modul +12V braucht (z.B. FM-Transceiver wegen SA818).
 3. `J201` USB-C mit dem PC verbinden — versorgt das Modul mit +5V_A und macht dessen USB-Datenleitungen am PC sichtbar.
-4. Tests/Bring-up wie in der Doku des jeweiligen Moduls beschrieben (siehe `Bringup`-Sektionen der Modul-Docs).
+4. Tests/Bringup wie in der Doku des jeweiligen Moduls beschrieben (siehe `Bringup`-Sektionen der Modul-Docs).
 
 ### 2. CM4 flashen (rpiboot)
 
@@ -133,7 +133,7 @@ Nach Bestückung:
 - [BusBoard](../HW-Module-BusBoard/) — kann via Bus-Tester-Seite (`J302`) ohne eigenes PowerBoard getestet werden.
 - [CM4 Carrier](../HW-Module-CM4Carrier/) — wird via Device-Tester-Seite (`J203`) geflasht; rpiboot-Logik im DeviceTester (`J202`).
 - [PowerBoard](../HW-Module-PowerBoard/) — kann standalone via Device-Tester-Seite (`J203` + Phoenix `J101` für +12V) getestet werden.
-- [FM Transceiver](../HW-Module-FMTransceiver/) — Standalone-Bring-up via Device-Tester-Seite (braucht beide Quellen: USB-C für USB + +5V, Phoenix für +12V).
+- [FM Transceiver](../HW-Module-FMTransceiver/) — Standalone-Bringup via Device-Tester-Seite (braucht beide Quellen: USB-C für USB + +5V, Phoenix für +12V).
 
 ## Daten
 
