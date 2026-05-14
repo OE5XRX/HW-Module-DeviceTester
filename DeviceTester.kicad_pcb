@@ -9,7 +9,7 @@
 	(paper "A4")
 	(title_block
 		(title "Device Tester")
-		(rev "<<HASH>>")
+		(rev "<<VERSION>>")
 		(company "Amateurfunkclub für Remote Stationen")
 		(comment 1 "JLC04161H-7628")
 	)
@@ -7793,7 +7793,7 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "<<HASH>>"
+	(gr_text "<<VERSION>>"
 		(at 104.969 109.634 0)
 		(layer "F.SilkS")
 		(uuid "46e35f71-37e3-4fa0-adfc-a652d885bf1f")
